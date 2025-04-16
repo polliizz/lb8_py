@@ -1,0 +1,11 @@
+text = input("Текст: ")
+vowels = "аеєиіїоуюяАЕЄИІЇОУЮЯ"
+consonants = "бвгґджзйклмнпрстфхцчшщБВГҐДЖЗЙКЛМНПРСТФХЦЧШЩ"
+vowel_list = list(c for c in text if c in vowels)
+consonant_list = list(c for c in text if c in consonants)
+letter_tuple = tuple(c for c in text if c.isalpha())
+letter_set = set(letter_tuple)
+print("Голосні:", vowel_list)
+print("Приголосні:", consonant_list)
+print("Усі:", letter_tuple)
+print("Унікальні:", letter_set)
